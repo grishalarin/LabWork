@@ -1,6 +1,5 @@
 package Finder;
 
-
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.List;
@@ -20,12 +19,10 @@ public class Words implements Runnable{
         this.source = source;
     }
 
-
     @Override
     public void run() {
         parse(source);
     }
-
 
     public void parse(String sources){
         Matcher matcher;
@@ -43,9 +40,6 @@ public class Words implements Runnable{
             e.printStackTrace();
         }
     }
-
-
-
 
     private void saveResultSentence(String sentence) {
         synchronized (resultList) {
@@ -71,4 +65,5 @@ public class Words implements Runnable{
     public String toString() {
         return "Words"+"source= "+ source +'\''+'}';
     }
+
 }

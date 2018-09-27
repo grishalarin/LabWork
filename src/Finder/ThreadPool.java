@@ -1,11 +1,9 @@
 package Finder;
 
-
 import java.util.List;
 import java.util.Queue;
 import java.util.concurrent.ConcurrentLinkedQueue;
 import java.util.concurrent.CopyOnWriteArrayList;
-
 
 public class ThreadPool {
 
@@ -35,5 +33,6 @@ public class ThreadPool {
             }
         }
         return thread;
+
     }
 }
